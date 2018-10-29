@@ -1,0 +1,24 @@
+.blog-posts ul,ol {
+    list-style-type: inherit;
+    list-style: inherit;
+}
+
+.blog-posts a {
+    font-weight: 600;
+    color: #ff8700;
+    text-decoration: none;
+}
+
+.blog-posts a:hover, a:focus{
+     color: #ffb844;
+     text-decoration: underline;
+     outline: none;
+}
+
+.blog-posts p{
+    text-indent: 2em; /*首行缩进*/
+}
+
+.blog-posts li p{
+    text-indent: 0em;
+}

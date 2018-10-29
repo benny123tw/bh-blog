@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include head-tag.html%}
+    </head>
+	<body>
+
+		<!-- Header -->
+		{% include header.html %}
+		<!-- /Header -->
+
+        {{ content }}
+
+		<!-- Footer -->
+		{% include footer.html %}
+		<!-- /Footer -->
+
+		<!-- jQuery Plugins -->
+		<script src="{{ site.baseurl}}/assets/js/jquery.min.js"></script>
+		<script src="{{ site.baseurl}}/assets/js/bootstrap.min.js"></script>
+		<script src="{{ site.baseurl}}/assets/js/main.js"></script>
+
+	</body>
+</html>
