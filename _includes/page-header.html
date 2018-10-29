@@ -7,7 +7,7 @@
         {% if page.layout == "post" %}
     <div class="background-img" style="background-image: url('{{ site.baseurl }}/assets/img/posts/header/16.jpg');"></div>
         {% endif %}
-    
+
         {% if page.layout == "post" and page.img != null %}
     <div class="background-img" style="background-image: url('{{ site.baseurl }}/assets/img/posts/header/{{ page.img }}');"></div>
         {% endif %}
@@ -19,7 +19,7 @@
                 <div class="post-meta">
                     {% include header-cat.html %}
                 </div>
-                <h1>{{ page.title }}</h1>
+                <h1>{{ page.title | capitalize}}</h1>
             </div>
                 {% else %}
                 <ul class="page-header-breadcrumb">
@@ -27,12 +27,12 @@
                     <!-- 判斷是否有title 沒有澤輸出日期 -->
                     {% if page.title %}
                     <li>{{ page.title }}</li>
-                </ul>  
-                    <h1>{{ page.title }}</h1>
+                </ul>
+                    <h1>{{ page.title | capitalize}}</h1>
                     {% else %}
                         <li>{{ page.date | date:"%Y" }}</li>
                         <li>{{ page.date | date:"%B" }}</li>
-                </ul>  
+                </ul>
                 <h1>{{ page.date | date:"%B %Y" }}</h1>
                     {% endif %}
                     <!-- 判斷結束 -->

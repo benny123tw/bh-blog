@@ -12,21 +12,21 @@
 <meta name="author" content="{{ page.author }}">
 {% endif %}
 
-<meta property="og:site_name" content="benny123tw.github.io/blog"/>
+<meta property="og:site_name" content="benny123tw.github.io/bh-blog"/>
 {% if page.title %}
-<meta property="og:title" content="{{ page.title }}"/>
+<meta property="og:title" content="{{ page.title | capitalize}}"/>
 <title>{{ page.title }} | BH Blog</title>
 {% endif %}
 <meta property="og:description" content="{{ page.excerpt | escape }}"/>
 <meta property="og:image" content="{{ site.baseurl }}/assets/img/post/header/15.jpg">
-<meta property="og:url" content="http://benny123tw.gihub.io/blog">
+<meta property="og:url" content="http://benny123tw.gihub.io/bh-blog">
 <meta property="og:type" content="blog"/>
 
 <!-- Icon -->
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
 
 <!-- Google font -->
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet">
 
 <!-- Bootstrap -->
 <link type="text/css" rel="stylesheet" href="{{ site.baseurl}}/assets/css/bootstrap.min.css"/>
