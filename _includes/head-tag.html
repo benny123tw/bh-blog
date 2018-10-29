@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+{% if page.summary %}
+<meta name="description" content="{{ page.summary | escape }}">
+{% endif %}
+{%if page.tags %}
+<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
+{%endif %}
+{% if page.author %}
+<meta name="author" content="{{ page.author }}">
+{% endif %}
+
+<meta property="og:site_name" content="benny123tw.github.io/blog"/>
+{% if page.title %}
+<meta property="og:title" content="{{ page.title }}"/>
+<title>{{ page.title }} | BH Blog</title>
+{% endif %}
+<meta property="og:description" content="{{ page.excerpt | escape }}"/>
+<meta property="og:image" content="{{ site.baseurl }}/assets/img/post/header/15.jpg">
+<meta property="og:url" content="http://benny123tw.gihub.io/blog">
+<meta property="og:type" content="blog"/>
+
+<!-- Icon -->
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico" />
+
+<!-- Google font -->
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
+
+<!-- Bootstrap -->
+<link type="text/css" rel="stylesheet" href="{{ site.baseurl}}/assets/css/bootstrap.min.css"/>
+
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" href="{{ site.baseurl}}/assets/css/font-awesome.min.css">
+
+<!-- Custom stlylesheet -->
+<link type="text/css" rel="stylesheet" href="{{ site.baseurl}}/assets/css/styles.css"/>
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
