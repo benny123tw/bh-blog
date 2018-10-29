@@ -1,0 +1,16 @@
+{% if post.img != null and post.layout == "post" %}
+<a class="post-img" href="{{ site.baseurl}}{{ post.url }}"><img src="{{ site.baseurl }}/assets/img/posts/thumbail/{{ post.img }}" alt=""></a>
+{% elsif post.layout == "post" %}
+<a class="post-img" href="{{ site.baseurl}}{{ post.url }}"><img src="{{ site.baseurl }}/assets/img/posts/thumbail/01.jpg" alt=""></a>  
+{% endif %}
+<div class="post-body">
+    {% if post5 != 'true' %}
+    <div class="post-meta">
+        {% include header-cat.html %}
+    </div>
+    {% endif %}
+    <h3 class="post-title"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></h3>
+    {% if post7 == true %}
+    <p>{{ post.excerpt | strip_html |truncatewords:2 }}</p> <!--strip_html可以讓內容變<p>, truncateword可限制字數以空格來算。-->
+    {% endif %}
+</div>

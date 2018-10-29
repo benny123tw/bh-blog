@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<!-- section -->
+<div class="section">
+    <!-- container -->
+    <div class="container">
+        <!-- row -->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row"> 
+
+                    <div class="clearfix visible-md visible-lg"></div>
+
+                    {% for post in page.posts limit: 6 %}
+                    {% include index/post7.html %}
+                    {% endfor %}
+
+                    <div class="col-md-12">
+                        <div class="section-row">
+                            <button class="primary-button center-block">Load More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <!-- ad -->
+                {% include /Ad/ad.html %}
+                <!-- /ad -->
+
+                <!-- post widget -->
+                {% include aside-widget/most-read.html %}
+                <!-- /post widget -->
+
+                <!-- catagories -->
+                {% include aside-widget/category.html %}
+                <!-- /catagories -->
+
+                <!-- tags -->
+                {% include aside-widget/tags.html %}
+                <!-- /tags -->
+
+                <!-- archive -->
+                {% include aside-widget/archive.html %}
+                <!-- /archive -->
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</div>
+<!-- /section -->

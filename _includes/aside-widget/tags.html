@@ -1,0 +1,11 @@
+<div class="aside-widget">
+    <div class="tags-widget">
+        <ul>
+            {% for item in site.tags %}
+            <li><a href="{{ site.baseurl }}/tags/{{ item[0] }}">{{ item[0] }}</a></li>
+            {% endfor %}
+            
+            
+        </ul>
+    </div>
+</div>
