@@ -1,0 +1,17 @@
+- name: java
+  class: cat-1
+  
+- name: ui-design
+  class: cat-2
+  
+- name: web
+  class: cat-3
+  
+- name: android
+  class: cat-4
+  
+- name: others
+  class: cat-5
+  
+- name: post
+  class: cat-6
