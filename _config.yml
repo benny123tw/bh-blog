@@ -1,5 +1,5 @@
 # Site settings
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "/bh-blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
@@ -8,16 +8,16 @@ markdown: kramdown
 #plugins
 plugins:
   - jekyll-archives
-  
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-  
+
 jekyll-archives:
-  enabled: 
+  enabled:
     - categories
     - tags
     - month
@@ -37,7 +37,7 @@ jekyll-archives:
 collections:
   authors:
     output: true
-    
+
 
 defaults:
   - scope:
@@ -55,4 +55,3 @@ defaults:
       type: "authors"
     values:
       layout: "author"
-      
