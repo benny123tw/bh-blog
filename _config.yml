@@ -50,6 +50,7 @@ defaults:
   - scope:
       path: ""
       type: "posts"
+      comments: true
     values:
       layout: "post"
       permalink: /:categories/:year/:month/:day/:title
@@ -58,3 +59,4 @@ defaults:
       type: "authors"
     values:
       layout: "author"
+      

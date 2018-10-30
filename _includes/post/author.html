@@ -2,19 +2,26 @@
     <div class="post-author">
         <div class="media">
             <div class="media-left">
-                <img class="media-object" src="{{ site.baseurl }}/assets/img/author.png" alt="">
-            </div>
-            <div class="media-body">
-                <div class="media-heading">
-                    <h3>John Doe</h3>
+                {% if page.author %}
+                    {% assign author = site.authors | where:"name", page.author %}
+                    <a href="{{ author.url }}"><img class="media-object" src="{{ site.baseurl }}/assets/img/author.png" alt=""></a>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <ul class="author-social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
+                <div class="media-body">
+                    <div class="media-heading">
+                        <h3><a href="{{ site.baseurl }}{{ author.url }}">{{ page.author }}</a></h3>
+                    </div>   
+                    {% if author.description %}
+                    <p>{{ author.description }}</p>
+                    {% else %}
+                    <p>這位作者沒有留下太多的資訊...</p>
+                    {% endif %}
+                    <ul class="author-social">
+                        <li><a href="{{ author.facebook }}"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="{{ author.twitter }}"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="{{ author.youtube }}"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="{{ author.instagram }}"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                {% endif %}
             </div>
         </div>
     </div>
