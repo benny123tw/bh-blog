@@ -24,19 +24,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <div class="row">
                     <div class="col-md-6">
                         <div class="footer-widget">
-                            <h3 class="footer-title">About Me</h3>
+                            <h3 class="footer-title">關於我</h3>
                             <ul class="footer-links">
-                                <li><a href="{{ site.baseurl }}/about/about.html">About Me</a></li>
-                                <li><a href="{{ site.baseurl }}/contact/contact.html">Contacts</a></li>
+                                <li><a href="{{ site.baseurl }}/about/about.html">關於我</a></li>
+                                <li><a href="{{ site.baseurl }}/contact/contact.html">聯繫我</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="footer-widget">
-                            <h3 class="footer-title">Catagories</h3>
+                            <h3 class="footer-title">分類</h3>
                             <ul class="footer-links">
                                 {% for item in site.data.category %}
-                                <li><a href="{{ site.baseurl }}{{ item.link }}">{{ item.name }}</a></li>
+                                <li><a href="{{ site.baseurl }}{{ item.link }}">{{ item.name || capitalize}}</a></li>
                                 {% endfor %}
                             </ul>
                         </div>
