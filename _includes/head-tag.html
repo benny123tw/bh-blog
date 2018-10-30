@@ -4,6 +4,8 @@
  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 {% if page.summary %}
 <meta name="description" content="{{ page.summary | escape }}">
+{% else if page.description %}
+<meta name="description" content="{{ page.description | escape }}">
 {% endif %}
 {%if page.tags %}
 <meta name="keywords" content="{{ page.tags | join: ', ' | escape }}"/>
