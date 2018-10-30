@@ -3,8 +3,8 @@
         <div class="media">
             <div class="media-left">
                 {% if page.author %}
-                    {% assign author = site.authors | where:"name", page.author %}
-                    <a href="{{ author.url }}"><img class="media-object" src="{{ site.baseurl }}/assets/img/author.png" alt=""></a>
+                    {% assign author = site.authors | where:'name', page.author | first%}
+                    <a href="{{ site.baseurl }}{{ author.url }}"><img class="media-object" src="{{ site.baseurl }}/assets/img/author.png" alt=""></a>
                 </div>
                 <div class="media-body">
                     <div class="media-heading">
