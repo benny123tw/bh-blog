@@ -1,3 +1,4 @@
 Readme
 ------
-This is my own site 
+My name is Benny Yen and this is my own website.
+
