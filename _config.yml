@@ -31,10 +31,10 @@ jekyll-archives:
     month: month
     year: month
   permalinks:
-    category: '/categories/:name/'
-    tag: '/tags/:name/'
-    month: '/post/:year/:month/'
-    year: '/post/:year/'
+    category: '/categories/:name'
+    tag: '/tags/:name'
+    month: '/post/:year/:month'
+    year: '/post/:year'
 
 #custom site data
 collections:
