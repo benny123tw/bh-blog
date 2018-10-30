@@ -1,6 +1,6 @@
 # Site settings
 baseurl: "/bh-blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://benny123tw.github.io/bh-blog" # the base hostname & protocol for your site, e.g. http://example.com
 #Google Analytics
 google_analytics: UA-128395546-1
 
@@ -10,7 +10,8 @@ markdown: kramdown
 #plugins
 plugins:
   - jekyll-archives
-
+  - jekyll-sitemap
+  
 category_archive:
   type: liquid
   path: /categories/
