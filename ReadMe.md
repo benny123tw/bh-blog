@@ -7,7 +7,7 @@
 Jekyll + Github Pages 
 ---------------------
 眾所周知**Jekyll**和**Github**最匹配，也由此選定架站的第一人選。  
-Jekyll是很強大的**STATIC SITE GENERATOR**，但也因為只是Static所以功能有限...  
+Jekyll是很強大的**STATIC SITE GENERATOR**，但也因為只是Static所以網頁只能是靜態網頁...  
 再加上Jekyll是由Ruby而生，但我沒有學過Ruby，應該說我不會任何Back-end語言，所以只能放在Github Pages裡。
 
 Jekyll Plugins
