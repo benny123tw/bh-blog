@@ -1,7 +1,7 @@
 ---
 short-name: Benny
 name: Benny Yen
-description: Benny Yen Yoyoyo!
+description: This is Benny Yen!
 facebook: http://www.facebook.com/benny123tw
 twitter: https://twitter.com/BennyYen2
 youtube: https://www.youtube.com/user/benny123rw/
